@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactos | Arte y Sabor</title>
+    <link rel="stylesheet" href="../inicio/estilo.css">
+    <link rel="stylesheet" href="../carrito/carrito.css">
+    <link rel="stylesheet" href="../contacto/contacto.css">
+    <link rel="icon" href="../Imagenes/Icono.png">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <a href="../nosotros/nosotros.html">
+            <img src="../Imagenes/Icono.png" alt="Icono de Arte y Sabor">
+        </a>
+    </div>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="../inicio/inicio.html">Inicio</a></li>
+            <li><a href="../menu/menu.html">Menú</a></li>
+            <li><a href="../reservaciones/reservaciones.html">Reservaciones</a></li>
+            <li><a href="../tienda/tienda.html">Tienda</a></li>
+            <li><a href="../contacto/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="iconos">
+        <a href="#" class="icono">
+            <img src="../Imagenes/usuario.png" alt="Perfil">
+        </a>
+
+        <a href="#" class="icono" id="btnCarrito">
+
+            <img
+                src="../Imagenes/carrito.png"
+                alt="Carrito">
+
+            <span id="contadorCarrito">
+                0
+            </span>
+
+        </a>
+    </div>
+</header>
+
+
+
+
+    <!-- =========================================
+         HERO
+         ========================================= -->
+
+    <section class="encabezado-contacto">
+
+        <div class="encabezado-contacto-contenido">
+
+            <span>
+                ESTAMOS PARA TI
+            </span>
+
+            <h1>
+                Contáctanos
+            </h1>
+
+            <p>
+                ¿Tienes alguna pregunta, quieres hacer una
+                reservación o simplemente quieres saludarnos?
+                Escríbenos. Nos encantará saber de ti.
+            </p>
+
+            <small>
+                Café, creatividad y momentos para compartir.
+            </small>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         INFORMACIÓN DE CONTACTO
+         ========================================= -->
+
+    <section class="contacto-contenedor">
+
+
+        <div class="contacto-intro">
+
+            <span>
+                HABLEMOS
+            </span>
+
+            <h2>
+                Estamos aquí para escucharte
+            </h2>
+
+            <p>
+                Encuéntranos, escríbenos o visítanos.
+                Será un gusto compartir contigo.
+            </p>
+
+        </div>
+
+
+
+        <!-- TARJETAS -->
+
+        <div class="tarjetas-contacto">
+
+
+            <div class="tarjeta-contacto">
+
+                <div class="icono-contacto">
+                    📍
+                </div>
+
+                <h3>
+                    Visítanos
+                </h3>
+
+                <p>
+                    Bogotá, Colombia
+                </p>
+
+                <span>
+                    Ven a disfrutar de un buen café
+                    y un espacio lleno de creatividad.
+                </span>
+
+            </div>
+
+
+
+            <div class="tarjeta-contacto">
+
+                <div class="icono-contacto">
+                    📞
+                </div>
+
+                <h3>
+                    Llámanos
+                </h3>
+
+                <p>
+                    +57 300 123 4567
+                </p>
+
+                <span>
+                    Estamos disponibles para resolver
+                    tus dudas y ayudarte.
+                </span>
+
+            </div>
+
+
+
+            <div class="tarjeta-contacto">
+
+                <div class="icono-contacto">
+                    ✉️
+                </div>
+
+                <h3>
+                    Escríbenos
+                </h3>
+
+                <p>
+                    contacto@arteysabor.com
+                </p>
+
+                <span>
+                    Envíanos tus preguntas,
+                    sugerencias o comentarios.
+                </span>
+
+            </div>
+
+
+
+            <div class="tarjeta-contacto">
+
+                <div class="icono-contacto">
+                    🕐
+                </div>
+
+                <h3>
+                    Horarios
+                </h3>
+
+                <p>
+                    Lunes - Domingo
+                </p>
+
+                <span>
+                    9:00 a.m. - 8:00 p.m.
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================================
+             FORMULARIO
+             ========================================= -->
+
+        <div class="formulario-contacto">
+
+
+            <div class="titulo-formulario">
+
+                <span>
+                    1
+                </span>
+
+                <div>
+
+                    <h2>
+                        Escríbenos
+                    </h2>
+
+                    <p>
+                        Cuéntanos cómo podemos ayudarte.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <form
+                id="formularioContacto">
+
+
+                <div class="fila-formulario">
+
+
+                    <!-- NOMBRE -->
+
+                    <div class="campo">
+
+                        <label for="nombre">
+                            Nombre
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Tu nombre"
+                            maxlength="60"
+                            required>
+
+                        <small class="limite">
+                            Máximo 60 caracteres
+                        </small>
+
+                    </div>
+
+
+
+                    <!-- CORREO -->
+
+                    <div class="campo">
+
+                        <label for="correo">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="tucorreo@email.com"
+                            maxlength="100"
+                            required>
+
+                        <small class="limite">
+                            Máximo 100 caracteres
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ASUNTO -->
+
+                <div class="campo">
+
+                    <label for="asunto">
+                        Asunto
+                    </label>
+
+                    <input
+                        type="text"
+                        id="asunto"
+                        name="asunto"
+                        placeholder="¿En qué podemos ayudarte?"
+                        maxlength="100"
+                        required>
+
+                </div>
+
+
+
+                <!-- MENSAJE -->
+
+                <div class="campo">
+
+                    <label for="mensaje">
+                        Mensaje
+                    </label>
+
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="6"
+                        maxlength="500"
+                        placeholder="Escribe tu mensaje..."
+                        required></textarea>
+
+                    <small class="contador-mensaje">
+                        0 / 500 caracteres
+                    </small>
+
+                </div>
+
+
+
+                <button
+                    type="submit"
+                    class="btn-gestion">
+
+                    Enviar mensaje
+
+                </button>
+
+
+
+                <p
+                    class="mensaje-formulario"
+                    id="mensajeFormulario">
+                </p>
+
+            </form>
+
+        </div>
+
+
+
+        <!-- =========================================
+             REDES SOCIALES
+             ========================================= -->
+
+        <div class="seccion-redes">
+
+
+            <div class="contacto-intro">
+
+                <span>
+                    SÍGUENOS
+                </span>
+
+                <h2>
+                    También estamos en redes
+                </h2>
+
+                <p>
+                    Síguenos y acompáñanos en nuestro día a día.
+                </p>
+
+            </div>
+
+
+
+            <div class="redes-contenedor">
+
+
+                <div class="red-social">
+
+                    <div class="red-icono">
+                        📸
+                    </div>
+
+                    <h3>
+                        Instagram
+                    </h3>
+
+                    <p>
+                        @arteysabor
+                    </p>
+
+                </div>
+
+
+
+                <div class="red-social">
+
+                    <div class="red-icono">
+                        📘
+                    </div>
+
+                    <h3>
+                        Facebook
+                    </h3>
+
+                    <p>
+                        Arte y Sabor
+                    </p>
+
+                </div>
+
+
+
+                <div class="red-social">
+
+                    <div class="red-icono">
+                        🎵
+                    </div>
+
+                    <h3>
+                        TikTok
+                    </h3>
+
+                    <p>
+                        @arteysabor
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================================
+             UBICACIÓN
+             ========================================= -->
+
+        <div class="seccion-ubicacion">
+
+
+            <div class="ubicacion-texto">
+
+                <span>
+                    ENCUÉNTRANOS
+                </span>
+
+                <h2>
+                    Ven a visitarnos
+                </h2>
+
+                <p>
+                    Queremos que Arte y Sabor sea ese
+                    lugar al que siempre quieras volver.
+                </p>
+
+
+                <div class="direccion">
+
+                    <strong>
+                        📍 Bogotá, Colombia
+                    </strong>
+
+                    <span>
+                        Un espacio para disfrutar,
+                        crear y compartir.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="mapa">
+
+                <div class="mapa-contenido">
+
+                    <div class="pin">
+                        📍
+                    </div>
+
+                    <h3>
+                        Arte y Sabor
+                    </h3>
+
+                    <p>
+                        Bogotá, Colombia
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================================
+             FRASE FINAL
+             ========================================= -->
+
+        <div class="frase-final">
+
+            <h2>
+                Café, creatividad y momentos para compartir.
+            </h2>
+
+            <p>
+                ☕ 🧶 ❤️
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+
+    <footer class="footer">
+
+        <div class="footer-contenido">
+
+
+            <div class="footer-columna">
+
+                <h3>
+                    Arte y Sabor
+                </h3>
+
+                <p>
+                    Un espacio donde el café y la creatividad
+                    se encuentran.
+                </p>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>
+                    Enlaces
+                </h3>
+
+                <a href="../inicio/inicio.html">
+                    Inicio
+                </a>
+
+                <a href="../menu/menu.html">
+                    Menú
+                </a>
+
+                <a href="../tienda/tienda.html">
+                    Tienda
+                </a>
+
+                <a href="../nosotros/nosotros.html">
+                    Nosotros
+                </a>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>
+                    Contacto
+                </h3>
+
+                <p>
+                    📍 Bogotá, Colombia
+                </p>
+
+                <p>
+                    📞 +57 300 123 4567
+                </p>
+
+                <p>
+                    ✉️ contacto@arteysabor.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-final">
+
+            <p>
+                © 2026 Arte y Sabor.
+                Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================
+         CARRITO
+         ========================================= -->
+
+    <div
+        class="fondo-carrito"
+        id="fondoCarrito">
+    </div>
+
+
+    <aside
+        class="carrito"
+        id="carrito">
+
+
+        <div class="carrito-header">
+
+            <h2>
+                🛒 Tu carrito
+            </h2>
+
+            <button id="cerrarCarrito">
+                ×
+            </button>
+
+        </div>
+
+
+        <div
+            class="carrito-productos"
+            id="carritoProductos">
+
+            <p class="carrito-vacio">
+                Tu carrito está vacío.
+            </p>
+
+        </div>
+
+
+        <div class="carrito-footer">
+
+            <div class="total-carrito">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="totalCarrito">
+                    $0
+                </strong>
+
+            </div>
+
+
+            <button
+                class="btn-comprar"
+                id="btnComprar">
+
+                Finalizar compra
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="../carrito/carrito.js"></script>
+    <script src="../usuario/usuario.js"></script>
+    <script src="../contacto/contacto.js"></script>
+
+
+</body>
+
+</html>

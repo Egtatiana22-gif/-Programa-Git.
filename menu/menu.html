@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú | Arte y Sabor</title>
+    <link rel="stylesheet" href="../inicio/estilo.css">
+    <link rel="stylesheet" href="../carrito/carrito.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="icon" type="image/jpeg" href="../Imagenes/Icono.png">
+</head>
+<body>
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        <a href="../nosotros/nosotros.html">
+            <img src="../Imagenes/Icono.png" alt="Icono de Arte y Sabor">
+        </a>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="../inicio/inicio.html"> Inicio </a> </li>
+            <li><a href="menu.html"> Menú </a></li>
+            <li><a href="../reservaciones/reservaciones.html"> Reservaciones </a></li>
+            <li><a href="../tienda/tienda.html"> Tienda </a></li>
+            <li><a href="../contacto/contacto.html"> Contacto </a></li>
+        </ul>
+    </nav>
+
+    <div class="iconos">
+
+        <a href="#" class="icono">
+            <img src="../Imagenes/usuario.png" alt="Perfil">
+        </a>
+        <a href="#" class="icono" id="btnCarrito">
+
+            <img
+                src="../Imagenes/carrito.png"
+                alt="Carrito">
+
+            <span id="contadorCarrito">
+                0
+            </span>
+
+        </a>
+    </div>
+</header>
+<!-- ENCABEZADO DEL MENÚ -->
+<section class="encabezado-menu">
+    <h1>
+        Descubre nuestros sabores
+    </h1>
+    <p>
+        <b>Cafés, bebidas, postres y comidas preparados para disfrutar cada momento en Arte y Sabor.</b>
+    </p>
+</section>
+<!-- CATEGORÍAS-->
+<section class="categorias-menu">
+    <h2> ¿Qué se te antoja hoy? </h2>
+    <div class="categorias-grid">
+        <!-- CAFÉS -->
+        <div class="categoria" data-categoria="cafes">
+            <h3> ☕ Cafés </h3>
+            <p>
+                Desde un espresso hasta nuestros cafés especiales
+                preparados con mucho sabor.
+            </p>
+        </div>
+        <!-- BEBIDAS FRÍAS -->
+        <div class="categoria"   data-categoria="frias">
+            <h3>
+                🧊 Bebidas Frías
+            </h3>
+            <p>
+                Opciones refrescantes para disfrutar
+                en cualquier momento del día.
+            </p>
+        </div>
+        <!-- POSTRES -->
+        <div class="categoria" data-categoria="postres">
+            <h3>
+                🍰 Postres
+            </h3>
+            <p>
+                Dulces caseros para acompañar tu café
+                y hacer especial cada visita.
+            </p>
+        </div>
+        <!-- COMIDAS -->
+        <div class="categoria" data-categoria="comidas">
+            <h3>
+                🥐 Comidas
+            </h3>
+            <p>
+                Opciones deliciosas para desayunar,
+                compartir o disfrutar durante tu visita.
+            </p>
+        </div>
+    </div>
+</section>
+<!--FAVORITOS DE LA CASA-->
+<section class="favoritos-menu">
+    <h2>
+        ❤️ Favoritos de la casa
+    </h2>
+    <p class="descripcion-seccion">
+        Algunos de los sabores que hacen especial
+        a Arte y Sabor.
+    </p>
+    <div class="productos-menu favoritos-productos">
+        <!-- PRODUCTO 1 -->
+        <div class="producto-menu">
+            <img
+                src="../Imagenes/latte_avellana.png"
+                alt="Latte de Avellana"
+            >
+            <span class="etiqueta-producto">
+                ⭐ Recomendado
+            </span>
+            <h3>
+                Latte de Avellana
+            </h3>
+            <p>
+                Café espresso, leche cremosa y un toque de avellana.
+            </p>
+            <strong>
+                $ 6.500
+            </strong>
+            <button class="btn-detalle">
+                Ver producto
+            </button>
+        </div>
+        <!-- PRODUCTO 2 -->
+        <div class="producto-menu">
+            <img
+                src="../Imagenes/mocha_artesanal.png"
+                alt="Mocha Artesanal"
+            >
+            <span class="etiqueta-producto">
+                ❤️ Favorito
+            </span>
+            <h3>
+                Mocha Artesanal
+            </h3>
+            <p>
+                Una combinación de café, chocolate y leche cremosa.
+            </p>
+            <strong>
+                $ 7.000
+            </strong>
+            <button class="btn-detalle">
+                Ver producto
+            </button>
+        </div>
+        <!-- PRODUCTO 3 -->
+        <div class="producto-menu">
+            <img
+                src="../Imagenes/croissant_almendra.png"
+                alt="Croissant de Almendra"
+            >
+            <span class="etiqueta-producto">
+                ⭐ Recomendado
+            </span>
+            <h3>
+                Croissant de Almendra
+            </h3>
+            <p>
+                Croissant suave y dorado con un delicioso toque de almendra.
+            </p>
+            <strong>
+                $ 5.500
+            </strong>
+            <button class="btn-detalle">
+                Ver producto
+            </button>
+        </div>
+        <!-- PRODUCTO 4 -->
+        <div class="producto-menu">
+            <img
+                src="../Imagenes/brownie_chocolate.png"
+                alt="Brownie de Chocolate"
+            >
+            <span class="etiqueta-producto">
+                ❤️ Favorito
+            </span>
+            <h3>
+                Brownie de Chocolate
+            </h3>
+            <p>
+                Brownie casero, suave por dentro y lleno de chocolate.
+            </p>
+            <strong>
+                $ 6.000
+            </strong>
+            <button class="btn-detalle">
+                Ver producto
+            </button>
+        </div>
+    </div>
+</section>
+<!--CARTA -->
+<section class="carta-menu">
+    <div class="titulo-carta">
+        <h2>
+            Nuestra carta
+        </h2>
+        <p>
+            Explora nuestras opciones y encuentra tu próximo favorito.
+        </p>
+    </div>
+    <!-- FILTROS -->
+    <div class="filtros-menu">
+        <button class="filtro activo" data-filtro="todos">
+            Todos
+        </button>
+        <button class="filtro" data-filtro="cafes">
+            ☕ Cafés
+        </button>
+        <button
+            class="filtro"
+            data-filtro="frias"
+        >
+            🧊 Bebidas frías
+        </button>
+        <button class="filtro" data-filtro="postres">
+            🍰 Postres
+        </button>
+        <button class="filtro" data-filtro="comidas">
+            🥐 Comidas
+        </button>
+    </div>
+    <!--CAFÉS -->
+    <div
+        class="categoria-productos"
+        data-seccion="cafes"
+    >
+        <h3>
+            ☕ Cafés
+        </h3>
+        <div class="productos-menu">
+            <!-- LATTE -->
+            <div
+                class="producto-menu"
+                data-categoria="cafes"
+            >
+                <img
+                    src="../Imagenes/latte_avellana.png"
+                    alt="Latte de Avellana"
+                >
+                <h4>
+                    Latte de Avellana
+                </h4>
+                <p>
+                    Espresso, leche cremosa y avellana.
+                </p>
+                <strong>
+                    $ 6.500
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+            <!-- MOCHA -->
+            <div
+                class="producto-menu"
+                data-categoria="cafes"
+            >
+                <img
+                    src="../Imagenes/mocha_artesanal.png"
+                    alt="Mocha Artesanal"
+                >
+                <h4>
+                    Mocha Artesanal
+                </h4>
+                <p>
+                    Café, chocolate y leche cremosa.
+                </p>
+                <strong>
+                    $ 7.000
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+            <!-- CAPUCHINO -->
+            <div
+                class="producto-menu"
+                data-categoria="cafes"
+            >
+                <img
+                    src="../Imagenes/Capuchino.png"
+                    alt="Capuchino"
+                >
+                <h4>
+                    Capuchino
+                </h4>
+                <p>
+                    Espresso con leche vaporizada y espuma.
+                </p>
+                <strong>
+                    $ 6.000
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+            <!-- AMERICANO -->
+            <div class="producto-menu"
+                data-categoria="cafes">
+                <img
+                    src="../Imagenes/Americano.png"
+                    alt="Americano"
+                >
+                <h4>
+                    Americano
+                </h4>
+                <p>
+                    Espresso suave acompañado de agua caliente.
+                </p>
+                <strong>
+                    $ 5.000
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+            <!-- LATTE VAINILLA -->
+            <div
+                class="producto-menu"
+                data-categoria="cafes"
+            >
+                <img
+                    src="../Imagenes/Latte de Vainilla.png"
+                    alt="latte_avellana"
+                >
+                <h4>
+                    Latte de Vainilla
+                </h4>
+                <p>
+                    Espresso, leche y un delicado toque de vainilla.
+                </p>
+                <strong>
+                    $ 6.500
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+            <!-- CAFÉ DE LA CASA -->
+            <div
+                class="producto-menu"
+                data-categoria="cafes"
+            >
+                <img
+                    src="../Imagenes/Café de la Casa.png"
+                    alt="cafe de casa"
+                >
+                <h4>
+                    Café de la Casa
+                </h4>
+                <p>
+                    La preparación especial de Arte y Sabor.
+                </p>
+                <strong>
+                    $ 6.000
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- BEBIDAS FRÍAS -->
+    <div
+        class="categoria-productos"
+        data-seccion="frias"
+    >
+        <h3>
+            🧊 Bebidas Frías
+        </h3>
+        <div class="productos-menu">
+            <div
+                class="producto-menu producto-nuevo"
+                data-categoria="frias"
+            >
+            <img
+                    src="../Imagenes/Cold Brew.png"
+                    alt="Cold Brew"
+                >
+                <h4>
+                    Cold Brew
+                </h4>
+                <p>
+                    Café preparado en frío, suave y refrescante.
+                </p>
+                <strong>
+                    $ 7.000
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+            <div
+                class="producto-menu producto-nuevo"
+                data-categoria="frias"
+            >
+                <img
+                    src="../Imagenes/Frappé de Café.png"
+                    alt="Frappé de cafe"
+                >
+                <h4>
+                    Frappé de Café
+                </h4>
+                <p>
+                    Café frío, hielo y una textura cremosa.
+                </p>
+                <strong>
+                    $ 8.000
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+            <div
+                class="producto-menu producto-nuevo"
+                data-categoria="frias"
+            >
+                <img
+                    src="../Imagenes/Chocolate Frío.png"
+                    alt="chocolatefrio"
+                >
+                <h4>
+                    Chocolate Frío
+                </h4>
+                <p>
+                    Chocolate cremoso servido bien frío.
+                </p>
+                <strong>
+                    $ 6.500
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+            <div
+                class="producto-menu producto-nuevo"
+                data-categoria="frias"
+            >
+                <img
+                    src="../Imagenes/Limonada Artesanal.png"
+                    alt="limonada Artesanal"
+                >
+                <h4>
+                    Limonada Artesanal
+                </h4>
+                <p>
+                    Refrescante limonada preparada al momento.
+                </p>
+                <strong>
+                    $ 5.500
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- POSTRES -->
+    <div
+        class="categoria-productos"
+        data-seccion="postres"
+    >
+        <h3>
+            🍰 Postres
+        </h3>
+        <div class="productos-menu">
+            <div
+                class="producto-menu"
+                data-categoria="postres"
+            >
+                <img
+                    src="../Imagenes/brownie_chocolate.png"
+                    alt="Brownie de Chocolate"
+                >
+                <h4>
+                    Brownie de Chocolate
+                </h4>
+                <p>
+                    Suave, casero y lleno de chocolate.
+                </p>
+                <strong>
+                    $ 6.000
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+            <div
+                class="producto-menu"
+                data-categoria="postres"
+            >
+                <img
+                    src="../Imagenes/Torta de Chocolate.png"
+                    alt="Torta de Chocolate"
+                >
+                <h4>
+                    Torta de Chocolate
+                </h4>
+                <p>
+                    Torta casera con intenso sabor a chocolate.
+                </p>
+                <strong>
+                    $ 7.500
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+            <div
+                class="producto-menu"
+                data-categoria="postres"
+            >
+                <img
+                    src="../Imagenes/Galletas Caseras.png"
+                    alt="Galletas Caseras"
+                >
+                <h4>
+                    Galletas Caseras
+                </h4>
+                <p>
+                    Crujientes y preparadas con mucho cariño.
+                </p>
+                <strong>
+                    $ 4.500
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+            <div
+                class="producto-menu"
+                data-categoria="postres"
+            >
+                <img
+                    src="../Imagenes/postre.png"
+                    alt="Postre de la Casa"
+                >
+                <h4>
+                    Postre de la Casa
+                </h4>
+                <p>
+                    Una opción dulce para cerrar tu visita.
+                </p>
+                <strong>
+                    $ 15.000
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+            <div
+                class="producto-menu producto-nuevo"
+                data-categoria="postres"
+            >
+            <img
+                    src="../Imagenes/Torta de Zanahoria.png"
+                    alt="tarta de zanahoria"
+                >
+                <h4>
+                    Torta de Zanahoria
+                </h4>
+                <p>
+                    Suave torta con zanahoria y especias.
+                </p>
+                <strong>
+                    $ 7.000
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+            <div
+                class="producto-menu producto-nuevo"
+                data-categoria="postres"
+            >
+                <img
+                    src="../Imagenes/Cheesecake.png"
+                    alt="Cheesecake"
+                >
+                <h4>
+                    Cheesecake
+                </h4>
+                <p>
+                    Cheesecake cremoso con un toque de frutos rojos.
+                </p>
+                <strong>
+                    $ 8.000
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--COMIDAS -->
+    <div
+        class="categoria-productos"
+        data-seccion="comidas"
+    >
+        <h3>
+            🥐 Comidas
+        </h3>
+        <div class="productos-menu">
+            <div
+                class="producto-menu"
+                data-categoria="comidas"
+            >
+
+                <img
+                    src="../Imagenes/croissant_almendra.png"
+                    alt="Croissant de Almendra"
+                >
+                <h4>
+                    Croissant de Almendra
+                </h4>
+                <p>
+                    Croissant dorado con un toque de almendra.
+                </p>
+                <strong>
+                    $ 5.500
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+            <div
+                class="producto-menu producto-nuevo"
+                data-categoria="comidas"
+            >
+                <img
+                    src="../Imagenes/Croissant de Queso.png"
+                    alt="Croissant de queso"
+                >
+                <h4>
+                    Croissant de Queso
+                </h4>
+                <p>
+                    Suave croissant horneado con queso.
+                </p>
+                <strong>
+                    $ 6.000
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+            <div
+                class="producto-menu producto-nuevo"
+                data-categoria="comidas"
+            >
+                <img
+                    src="../Imagenes/Sándwich Artesanal.png"
+                    alt="sandwich Artesanal"
+                >
+                <h4>
+                    Sándwich Artesanal
+                </h4>
+                <p>
+                    Pan fresco, ingredientes seleccionados y mucho sabor.
+                </p>
+                <strong>
+                    $ 10.000
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+            <div
+                class="producto-menu producto-nuevo"
+                data-categoria="comidas"
+            >
+                <img
+                    src="../Imagenes/Tostadas de la Casa.png"
+                    alt="tostada de la casa"
+                >
+                <h4>
+                    Tostadas de la Casa
+                </h4>
+                <p>
+                    Tostadas acompañadas de ingredientes frescos.
+                </p>
+                <strong>
+                    $ 8.000
+                </strong>
+                <button class="btn-detalle">
+                    Agregar al carrito
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ESPECIALIDAD DE LA CASA -->
+<section class="especialidad">
+    <div class="especialidad-texto">
+        <span>
+            ✨ Especialidad de la casa
+        </span>
+        <h2>
+            El sabor de Arte y Sabor
+        </h2>
+        <p>
+            Una preparación especial que representa nuestra cafetería:
+            café, creatividad y ese toque casero que queremos compartir
+            contigo.
+        </p>
+        <button class="btn-especialidad">
+            Descubrir especialidad
+        </button>
+    </div>
+    <div class="especialidad-icono">
+    <img src="../Imagenes/Icono.png" alt="Café especial">
+</div>
+</section>
+<!-- EXPERIENCIAS-->
+<section class="experiencias-menu">
+    <h2>
+        🧶 Más que una cafetería
+    </h2>
+    <p>
+        Disfruta un buen café mientras descubres tu lado creativo.
+    </p>
+    <div class="experiencias-grid">
+        <div class="experiencia">
+            <h3>
+                🧶 Taller de Crochet
+            </h3>
+            <p>
+                Aprende, crea y comparte en un ambiente acogedor.
+            </p>
+        </div>
+        <div class="experiencia">
+            <h3>
+                🎨 Taller de Pintura
+            </h3>
+            <p>
+                Una experiencia para dejar volar tu creatividad.
+            </p>
+        </div>
+        <div class="experiencia">
+            <h3>
+                ✨ Creación de Pulseras
+            </h3>
+            <p>
+                Diseña tus propios accesorios y llévalos contigo.
+            </p>
+        </div>
+        <div class="experiencia">
+            <h3>
+                ☕ Experiencias con Café
+            </h3>
+            <p>
+                Descubre nuevas formas de disfrutar y conocer el café.
+            </p>
+        </div>
+    </div>
+    <a class="btn-experiencias" href="../reservaciones/reservaciones.html">
+    Ver experiencias
+    </a>
+</section>
+<!-- ARTA DIGITAL - ESPACIO FUTURO -->
+<section class="espacio-futuro carta-digital">
+    <h2>
+        📖 Carta digital
+    </h2>
+    <p>
+        Próximamente podrás consultar nuestra carta digital completa.
+    </p>
+</section>
+<!-- PQR - ESPACIO FUTURO -->
+<section class="espacio-futuro pqr">
+    <h2>
+        💬 Tu opinión nos importa
+    </h2>
+    <p>
+        Próximamente podrás dejarnos tus sugerencias,
+        felicitaciones, peticiones o reclamos.
+    </p>
+</section>
+<!-- CARRITO -->
+
+<div
+    class="fondo-carrito"
+    id="fondoCarrito">
+</div>
+
+<aside
+    class="carrito"
+    id="carrito">
+
+    <div class="carrito-header">
+
+        <h2>
+            🛒 Tu carrito
+        </h2>
+
+        <button id="cerrarCarrito">
+            ×
+        </button>
+
+    </div>
+
+    <div
+        class="carrito-productos"
+        id="carritoProductos">
+
+        <p class="carrito-vacio">
+            Tu carrito está vacío.
+        </p>
+
+    </div>
+
+    <div class="carrito-footer">
+
+        <div class="total-carrito">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="totalCarrito">
+                $0
+            </strong>
+
+        </div>
+
+        <button
+            class="btn-comprar"
+            id="btnComprar">
+
+            Finalizar compra
+
+        </button>
+
+    </div>
+
+</aside>
+
+<!-- FOOTER -->
+<footer>
+    <h3>
+        Arte y Sabor
+    </h3>
+    <p class="mensaje-footer">
+        Gracias por ser parte de este espacio donde el café,
+        el arte y la creatividad se encuentran. ☕🧶
+    </p>
+    <div class="datos-footer">
+        <p>
+            📍 Bogotá, Colombia
+        </p>
+        <p>
+            🕐 Lunes a sábado · 9:00 a.m. - 7:00 p.m.
+        </p>
+        <p>
+            📞 +57 300 123 4567
+        </p>
+    </div>
+    <p class="copyright">
+        © 2026 Arte y Sabor · Todos los derechos reservados
+    </p>
+</footer>
+<script src="menu.js"></script>
+<script src="../carrito/carrito.js"></script>
+<script src="../usuario/usuario.js"></script>
+</body>
+</html>

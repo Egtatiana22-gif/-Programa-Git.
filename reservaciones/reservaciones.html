@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Reservaciones | Arte y Sabor
+    </title>
+    <link rel="stylesheet" href="../carrito/carrito.css">
+    <link
+        rel="stylesheet"
+        href="../inicio/estilo.css">
+
+    <link
+        rel="stylesheet"
+        href="reservaciones.css">
+
+    <link
+        rel="icon"
+        href="../Imagenes/Icono.png">
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">
+
+        <a href="../nosotros/nosotros.html">
+
+            <img
+                src="../Imagenes/Icono.png"
+                alt="Icono de Arte y Sabor">
+
+        </a>
+
+    </div>
+
+
+    <nav>
+
+        <ul class="menu">
+
+            <li>
+                <a href="../inicio/inicio.html">
+                    Inicio
+                </a>
+            </li>
+
+            <li>
+                <a href="../menu/menu.html">
+                    Menú
+                </a>
+            </li>
+
+            <li>
+                <a href="reservaciones.html">
+                    Reservaciones
+                </a>
+            </li>
+
+            <li>
+                <a href="../tienda/tienda.html">
+                    Tienda
+                </a>
+            </li>
+
+            <li>
+                <a href="../contacto/contacto.html">
+                    Contacto
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <div class="iconos">
+
+        <a
+            href="#"
+            class="icono">
+
+            <img
+                src="../Imagenes/usuario.png"
+                alt="Perfil">
+
+        </a>
+
+
+        <a href="#" class="icono" id="btnCarrito">
+
+            <img
+                src="../Imagenes/carrito.png"
+                alt="Carrito">
+
+            <span id="contadorCarrito">
+                0
+            </span>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ENCABEZADO -->
+
+<section class="encabezado-reservaciones">
+
+    <div class="encabezado-contenido">
+
+        <h1>
+            Reserva tu momento
+        </h1>
+
+        <p>
+            Elige el día, el horario y la experiencia que quieres
+            disfrutar con nosotros.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- RESERVACIÓN -->
+
+<main class="reservaciones-contenedor">
+
+
+    <section class="reserva-principal">
+
+
+        <!-- CALENDARIO -->
+
+        <div class="calendario-contenedor">
+
+            <div class="titulo-reserva">
+
+                <span>
+                    01
+                </span>
+
+                <div>
+
+                    <h2>
+                        Elige tu fecha
+                    </h2>
+
+                    <p>
+                        Selecciona un día disponible para tu reserva.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="calendario">
+
+                <div class="calendario-header">
+
+                    <button
+                        type="button"
+                        id="mes-anterior"
+                        class="btn-mes">
+
+                        ‹
+
+                    </button>
+
+
+                    <h3 id="mes-actual">
+                        Septiembre 2026
+                    </h3>
+
+
+                    <button
+                        type="button"
+                        id="mes-siguiente"
+                        class="btn-mes">
+
+                        ›
+
+                    </button>
+
+                </div>
+
+
+                <div class="dias-semana">
+
+                    <span>D</span>
+                    <span>L</span>
+                    <span>M</span>
+                    <span>M</span>
+                    <span>J</span>
+                    <span>V</span>
+                    <span>S</span>
+
+                </div>
+
+
+                <div
+                    id="dias-calendario"
+                    class="dias-calendario">
+                </div>
+
+
+                <div class="leyenda-calendario">
+
+                    <div>
+
+                        <span
+                            class="punto disponible">
+                        </span>
+
+                        Disponible
+
+                    </div>
+
+
+                    <div>
+
+                        <span
+                            class="punto limitado">
+                        </span>
+
+                        Limitado
+
+                    </div>
+
+
+                    <div>
+
+                        <span
+                            class="punto bloqueado">
+                        </span>
+
+                        No disponible
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FORMULARIO -->
+
+        <div class="formulario-contenedor">
+
+            <div class="titulo-reserva">
+
+                <span>
+                    02
+                </span>
+
+                <div>
+
+                    <h2>
+                        Cuéntanos sobre tu reserva
+                    </h2>
+
+                    <p>
+                        Completa los datos para preparar tu experiencia.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <form id="formulario-reserva">
+
+
+                <div class="fila-formulario">
+
+
+                    <div class="campo">
+
+                        <label for="nombre">
+                            Nombre completo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Tu nombre"
+                            maxlength="80"
+                            autocomplete="name"
+                            required>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="telefono">
+                            Teléfono
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            placeholder="300 000 0000"
+                            inputmode="numeric"
+                            pattern="3[0-9]{9}"
+                            maxlength="10"
+                            minlength="10"
+                            autocomplete="tel"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="fila-formulario">
+
+
+                    <div class="campo">
+
+                        <label for="correo">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="tucorreo@email.com"
+                            maxlength="120"
+                            autocomplete="email"
+                            required>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="personas">
+                            Número de personas
+                        </label>
+
+                        <select
+                            id="personas"
+                            name="personas"
+                            required>
+
+                            <option value="">
+                                Selecciona
+                            </option>
+
+                            <option value="1">
+                                1 persona
+                            </option>
+
+                            <option value="2">
+                                2 personas
+                            </option>
+
+                            <option value="3">
+                                3 personas
+                            </option>
+
+                            <option value="4">
+                                4 personas
+                            </option>
+
+                            <option value="5">
+                                5 personas
+                            </option>
+
+                            <option value="6">
+                                6 personas
+                            </option>
+
+                            <option value="7">
+                                7 personas
+                            </option>
+
+                            <option value="8">
+                                8 personas
+                            </option>
+
+                            <option value="9">
+                                9 personas
+                            </option>
+
+                            <option value="10">
+                                10 personas
+                            </option>
+
+                            <option value="mas-de-10">
+                                Más de 10 personas
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="fecha">
+                        Fecha seleccionada
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fecha"
+                        name="fecha"
+                        placeholder="Selecciona una fecha en el calendario"
+                        readonly
+                        required>
+
+                </div>
+
+
+                <!-- HORARIOS -->
+
+                <div class="campo">
+
+                    <label>
+                        Horario
+                    </label>
+
+                    <div
+                        id="horarios"
+                        class="horarios">
+
+                        <p class="mensaje-horarios">
+                            Selecciona primero una fecha.
+                        </p>
+
+                    </div>
+
+
+                    <input
+                        type="hidden"
+                        id="hora"
+                        name="hora"
+                        required>
+
+                </div>
+
+
+                <!-- EXPERIENCIA -->
+
+                <div class="campo">
+
+                    <label for="experiencia">
+                        Tipo de experiencia
+                    </label>
+
+                    <select
+                        id="experiencia"
+                        name="experiencia"
+                        required>
+
+                        <option value="">
+                            Selecciona una experiencia
+                        </option>
+
+                        <option value="Mesa / Café">
+                            ☕ Mesa / Café
+                        </option>
+
+                        <option value="Taller de Crochet">
+                            🧶 Taller de Crochet
+                        </option>
+
+                        <option value="Taller de Pintura">
+                            🎨 Taller de Pintura
+                        </option>
+
+                        <option value="Creación de Pulseras">
+                            ✨ Creación de Pulseras
+                        </option>
+
+                        <option value="Experiencia con Café">
+                            ☕ Experiencia con Café
+                        </option>
+
+                        <option value="Celebración / Evento">
+                            🎉 Celebración / Evento
+                        </option>
+
+                        <option value="Otra">
+                            💬 Otra
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- OTRA EXPERIENCIA -->
+
+                <div
+                    id="otra-experiencia-contenedor"
+                    class="campo campo-oculto">
+
+                    <label for="otra-experiencia">
+                        Cuéntanos qué tienes en mente
+                    </label>
+
+                    <input
+                        type="text"
+                        id="otra-experiencia"
+                        name="otra-experiencia"
+                        placeholder="Describe brevemente tu idea"
+                        maxlength="500">
+
+                </div>
+
+
+                <!-- MENSAJE -->
+
+                <div class="campo">
+
+                    <label for="mensaje">
+                        Mensaje adicional
+                    </label>
+
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        maxlength="3000"
+                        placeholder="¿Hay algo que debamos saber sobre tu reserva?"></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn-reservar">
+
+                    Reservar
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- INFORMACIÓN DE RESERVA -->
+
+    <section class="informacion-reserva">
+
+
+        <div class="info-item">
+
+            <span>
+                ☕
+            </span>
+
+            <div>
+
+                <h3>
+                    Un momento para ti
+                </h3>
+
+                <p>
+                    Ven a disfrutar de un café, una conversación
+                    o una experiencia creativa.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="info-item">
+
+            <span>
+                🕐
+            </span>
+
+            <div>
+
+                <h3>
+                    Horario
+                </h3>
+
+                <p>
+                    Lunes a sábado<br>
+                    9:00 a. m. - 7:00 p. m.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="info-item">
+
+            <span>
+                📍
+            </span>
+
+            <div>
+
+                <h3>
+                    Estamos en Bogotá
+                </h3>
+
+                <p>
+                    Un espacio pensado para compartir,
+                    crear y disfrutar.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TU MOMENTO -->
+
+    <section class="tu-momento">
+
+        <div class="tu-momento-texto">
+
+            <span>
+                ARTE Y SABOR
+            </span>
+
+            <h2>
+                Tu momento, a tu manera
+            </h2>
+
+            <p>
+                Una mesa para conversar, un taller para crear,
+                un café para disfrutar o simplemente un espacio
+                para hacer una pausa.
+            </p>
+
+        </div>
+
+
+        <div class="momentos-grid">
+
+
+            <div class="momento">
+
+                <span>
+                    ☕
+                </span>
+
+                <h3>
+                    Café
+                </h3>
+
+                <p>
+                    Disfruta nuestros sabores artesanales.
+                </p>
+
+            </div>
+
+
+            <div class="momento">
+
+                <span>
+                    🎨
+                </span>
+
+                <h3>
+                    Arte
+                </h3>
+
+                <p>
+                    Dale espacio a tu creatividad.
+                </p>
+
+            </div>
+
+
+            <div class="momento">
+
+                <span>
+                    🧶
+                </span>
+
+                <h3>
+                    Creatividad
+                </h3>
+
+                <p>
+                    Aprende y crea algo nuevo.
+                </p>
+
+            </div>
+
+
+            <div class="momento">
+
+                <span>
+                    ✨
+                </span>
+
+                <h3>
+                    Experiencias
+                </h3>
+
+                <p>
+                    Comparte momentos especiales.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- POLÍTICA -->
+
+    <section class="politica-reserva">
+
+        <h2>
+            Antes de reservar
+        </h2>
+
+        <p>
+            Las reservas están sujetas a disponibilidad.
+            Si necesitas cancelar o modificar tu reserva,
+            te recomendamos hacerlo con anticipación.
+        </p>
+
+
+        <!-- CANCELACIÓN -->
+
+        <div class="cancelacion-reserva">
+
+            <p>
+                ¿Necesitas cancelar o modificar tu reserva?
+            </p>
+
+            <button
+                type="button"
+                id="btn-cancelar">
+
+                si quiero hacerlo
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONFIRMACIÓN -->
+
+    <div
+        id="confirmacion"
+        class="confirmacion">
+
+        <div class="confirmacion-contenido">
+
+
+            <button
+                type="button"
+                id="cerrar-confirmacion"
+                class="cerrar-confirmacion">
+
+                ×
+
+            </button>
+
+
+            <div class="confirmacion-icono">
+                ✓
+            </div>
+
+
+            <h2 id="titulo-confirmacion">
+                Revisa tu reserva
+            </h2>
+
+
+            <p id="mensaje-confirmacion">
+                Verifica que todos tus datos estén correctos antes de confirmar.
+            </p>
+
+
+            <div
+                id="resumen-reserva"
+                class="resumen-reserva">
+            </div>
+
+
+            <div class="botones-confirmacion">
+
+                <button
+                    type="button"
+                    id="editar-reserva"
+                    class="btn-editar-reserva">
+
+                    ✏️ Editar reserva
+
+                </button>
+
+
+                <button
+                    type="button"
+                    id="confirmar-reserva"
+                    class="btn-confirmar-reserva">
+
+                    ✓ Confirmar reserva
+
+                </button>
+
+            </div>
+
+
+            <button
+                type="button"
+                id="nueva-reserva"
+                class="btn-nueva-reserva">
+
+                Hacer otra reserva
+
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+<!-- CARRITO -->
+
+<div
+    class="fondo-carrito"
+    id="fondoCarrito">
+</div>
+
+<aside
+    class="carrito"
+    id="carrito">
+
+    <div class="carrito-header">
+
+        <h2>
+            🛒 Tu carrito
+        </h2>
+
+        <button id="cerrarCarrito">
+            ×
+        </button>
+
+    </div>
+
+    <div
+        class="carrito-productos"
+        id="carritoProductos">
+
+        <p class="carrito-vacio">
+            Tu carrito está vacío.
+        </p>
+
+    </div>
+
+    <div class="carrito-footer">
+
+        <div class="total-carrito">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="totalCarrito">
+                $0
+            </strong>
+
+        </div>
+
+        <button
+            class="btn-comprar"
+            id="btnComprar">
+
+            Finalizar compra
+
+        </button>
+
+    </div>
+
+</aside>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>
+        Arte y Sabor
+    </h3>
+
+
+    <p class="mensaje-footer">
+        Gracias por ser parte de este espacio donde el café,
+        el arte y la creatividad se encuentran. ☕🧶
+    </p>
+
+
+    <div class="datos-footer">
+
+        <p>
+            📍 Bogotá, Colombia
+        </p>
+
+        <p>
+            🕐 Lunes a sábado · 9:00 a.m. - 7:00 p.m.
+        </p>
+
+        <p>
+            📞 +57 300 123 4567
+        </p>
+
+    </div>
+
+
+    <p class="copyright">
+        © 2026 Arte y Sabor · Todos los derechos reservados
+    </p>
+
+</footer>
+
+
+<script src="reservaciones.js"></script>
+<script src="../carrito/carrito.js"></script>
+<script src="../usuario/usuario.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,387 @@
+/* =========================================
+   CARRITO - ARTE Y SABOR
+   ========================================= */
+
+.icono {
+    position: relative;
+}
+
+#contadorCarrito {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #8B6F47;
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   FONDO OSCURO
+   ========================================= */
+
+.fondo-carrito {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.3s ease;
+
+    z-index: 90;
+}
+
+.fondo-carrito.mostrar {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* =========================================
+   CARRITO
+   ========================================= */
+
+.carrito {
+    position: fixed;
+
+    top: 0;
+    right: -430px;
+
+    width: 400px;
+    max-width: 90%;
+
+    height: 100vh;
+
+    background: white;
+
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.15);
+
+    transition: right 0.35s ease;
+}
+
+.carrito.mostrar {
+    right: 0;
+}
+
+
+/* =========================================
+   ENCABEZADO
+   ========================================= */
+
+.carrito-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px;
+
+    border-bottom: 1px solid #E8E6E1;
+}
+
+.carrito-header h2 {
+    color: #4A5A3A;
+    margin: 0;
+}
+
+
+/* BOTÓN X */
+
+.carrito-header button {
+    width: 36px;
+    height: 36px;
+
+    min-width: 36px;
+    min-height: 36px;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #E8E6E1;
+    color: #4A5A3A;
+
+    font-size: 22px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.carrito-header button:hover {
+    background-color: #8B6F47;
+    color: white;
+}
+
+
+/* =========================================
+   PRODUCTOS DEL CARRITO
+   ========================================= */
+
+.carrito-productos {
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding: 20px;
+}
+
+.carrito-vacio {
+    text-align: center;
+
+    color: #777;
+
+    margin-top: 50px;
+}
+
+
+/* =========================================
+   PRODUCTO
+   ========================================= */
+
+.item-carrito {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        auto;
+
+    grid-template-areas:
+        "info eliminar"
+        "cantidad subtotal";
+
+    gap: 12px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #E8E6E1;
+}
+
+
+/* INFORMACIÓN */
+
+.item-carrito-info {
+    grid-area: info;
+}
+
+.item-carrito-info h4 {
+    margin: 0 0 7px;
+
+    color: #4A5A3A;
+}
+
+.item-carrito-info p {
+    margin: 0;
+
+    color: #8B6F47;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   CANTIDAD
+   ========================================= */
+
+.cantidad-carrito {
+    grid-area: cantidad;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.btn-cantidad {
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #E8E6E1;
+    color: #4A5A3A;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.btn-cantidad:hover {
+    background-color: #8B6F47;
+    color: white;
+
+    transform: scale(1.08);
+}
+
+.cantidad-carrito span {
+    min-width: 20px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    color: #4A5A3A;
+}
+
+
+/* =========================================
+   SUBTOTAL
+   ========================================= */
+
+.subtotal-carrito {
+    grid-area: subtotal;
+
+    color: #8B6F47;
+
+    align-self: center;
+}
+
+
+/* =========================================
+   ELIMINAR
+   ========================================= */
+
+.eliminar-item {
+    width: 38px;
+    height: 38px;
+
+    padding: 0;
+    margin: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.eliminar-item:hover {
+    transform: scale(1.1);
+
+    background-color: #8B6F47;
+
+    color: white;
+}
+
+
+/* =========================================
+   PIE DEL CARRITO
+   ========================================= */
+
+.carrito-footer {
+    padding: 25px;
+
+    border-top: 1px solid #E8E6E1;
+}
+
+.total-carrito {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+    font-size: 18px;
+}
+
+.total-carrito strong {
+    color: #8B6F47;
+}
+
+
+/* =========================================
+   BOTÓN COMPRAR
+   ========================================= */
+
+.btn-comprar {
+    width: 100%;
+
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: #4A5A3A;
+    color: white;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+    transform: translateY(-3px) scale(1.03);
+
+    background-color: #8B6F47;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .carrito {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .carrito-header {
+        padding: 20px;
+    }
+
+    .carrito-productos {
+        padding: 15px;
+    }
+
+    .carrito-footer {
+        padding: 20px;
+    }
+
+}

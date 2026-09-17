@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte y Sabor</title>
+    <link rel="stylesheet" href="../inicio/estilo.css">
+    <link rel="stylesheet" href="../carrito/carrito.css">
+    <link rel="icon" type="image/jpeg" href="../Imagenes/Icono.png">
+</head>
+
+<body>
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        <a href="../nosotros/nosotros.html">
+            <img src="../Imagenes/Icono.png" alt="Icono de Arte y Sabor">
+        </a>
+    </div>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="../inicio/inicio.html">Inicio</a></li>
+            <li><a href="../menu/menu.html">Menú</a></li>
+            <li><a href="../reservaciones/reservaciones.html">Reservaciones</a></li>
+            <li><a href="../tienda/tienda.html">Tienda</a></li>
+            <li><a href="../contacto/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="iconos">
+        <a href="#" class="icono">
+            <img src="../Imagenes/usuario.png" alt="Perfil">
+        </a>
+        <a href="#" class="icono" id="btnCarrito">
+            <img src="../Imagenes/carrito.png" alt="Carrito">
+            <span id="contadorCarrito">
+                0
+            </span>
+        </a>
+    </div>
+</header>
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-texto">
+        <h1>Café, arte y momentos que <span>te abrazan</span></h1>
+        <p>Un lugar donde el crochet, el arte y el café se encuentran.</p>
+        <button id="btnBienvenida" class="btnBienvenida">Conoce más</button>
+    </div>
+
+    <div class="hero-imagen">
+        <img src="../Imagenes/gato.png" alt="Gato">
+    </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="servicios">
+    <div class="card">
+        <h3>☕ Café Especial</h3>
+        <p>Granos seleccionados y preparaciones únicas.</p>
+    </div>
+
+    <div class="card">
+        <h3>🧶 Arte & Crochet</h3>
+        <p>Talleres y Productos hechos con amor.</p>
+    </div>
+
+    <div class="card">
+        <h3>🍰 Postres Caseros</h3>
+        <p>Recetas tradicionales e ingredientes frescos.</p>
+    </div>
+
+    <div class="card">
+        <h3>🏡 Ambiente Acogedor</h3>
+        <p>Un espacio ideal para leer, compartir y crear.</p>
+    </div>
+</section>
+
+<!-- FAVORITOS -->
+<section class="favoritos">
+    <h2>Nuestros Favoritos</h2>
+
+    <div class="productos">
+
+        <!-- PRODUCTO 1 -->
+        <div class="producto">
+            <img src="../Imagenes/latte_avellana.png" alt="Latte de Avellana">
+            <h4>☕ Latte de Avellana</h4>
+
+            <div class="boton-carrito">
+                <button class="btn-carrito">$ 6.500</button>
+                <span>¿Quieres agregarlo al carrito?</span>
+            </div>
+        </div>
+
+        <!-- PRODUCTO 2 -->
+        <div class="producto">
+            <img src="../Imagenes/mocha_artesanal.png" alt="Mocha Artesanal">
+            <h4>☕ Mocha Artesanal</h4>
+
+            <div class="boton-carrito">
+                <button class="btn-carrito">$ 7.000</button>
+                <span>¿Quieres agregarlo al carrito?</span>
+            </div>
+        </div>
+
+        <!-- PRODUCTO 3 -->
+        <div class="producto">
+            <img src="../Imagenes/croissant_almendra.png" alt="Croissant de Almendra">
+            <h4>🥐 Croissant de Almendra</h4>
+
+            <div class="boton-carrito">
+                <button class="btn-carrito">$ 5.500</button>
+                <span>¿Quieres agregarlo al carrito?</span>
+            </div>
+        </div>
+
+        <!-- PRODUCTO 4 -->
+        <div class="producto">
+            <img src="../Imagenes/brownie_chocolate.png" alt="Brownie de Chocolate">
+            <h4>🍫 Brownie de Chocolate</h4>
+
+            <div class="boton-carrito">
+                <button class="btn-carrito">$ 6.000</button>
+                <span>¿Quieres agregarlo al carrito?</span>
+            </div>
+        </div>
+
+    </div>
+<!-- PRODUCTOS EXTRA -->
+    <div id="productosExtra" class="productos-extra">
+
+        <div class="producto">
+            <img src="../Imagenes/Capuchino.png" alt="Capuchino">
+            <h4>☕ Capuchino</h4>
+
+            <div class="boton-carrito">
+                <button class="btn-carrito">$ 6.000</button>
+                <span>¿Quieres agregarlo al carrito?</span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../Imagenes/Torta de Chocolate.png" alt="Torta de Chocolate">
+            <h4>🍰 Torta de Chocolate</h4>
+
+            <div class="boton-carrito">
+                <button class="btn-carrito">$ 7.500</button>
+                <span>¿Quieres agregarlo al carrito?</span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../Imagenes/Galletas Caseras.png" alt="Galletas Caseras">
+            <h4>🍪 Galletas Caseras</h4>
+
+            <div class="boton-carrito">
+                <button class="btn-carrito">$ 4.500</button>
+                <span>¿Quieres agregarlo al carrito?</span>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="../Imagenes/postre.png" alt="Postre">
+            <h4>🍮 Postre</h4>
+
+            <div class="boton-carrito">
+                <button class="btn-carrito">$ 15.000</button>
+                <span>¿Quieres agregarlo al carrito?</span>
+            </div>
+        </div>
+
+    </div>
+<!-- BOTÓN VER MÁS -->
+    <div class="contenedor-ver-mas">
+        <button id="btnVerMas" class="btn-ver-mas">Ver más</button>
+    </div>
+</section>
+
+<!-- TIENDA -->
+<section class="tienda">
+    <h2>Hecho a mano, hecho con amor ❤️</h2>
+
+    <div class="tienda-contenido">
+
+        <!-- PRODUCTO 1 -->
+        <div class="producto-tienda">
+            <img src="../Imagenes/Libro de Manualidades.png" alt="Libro de manualidades">
+            <h4>📖 Libro de Manualidades</h4>
+            <p>Ideas y proyectos para crear.</p>
+
+            <div class="boton-carrito">
+                <button class="btn-carrito">$ 35.000</button>
+                <span>¿Quieres agregarlo al carrito?</span>
+            </div>
+        </div>
+
+        <!-- PRODUCTO 2 -->
+        <div class="producto-tienda">
+            <img src="../Imagenes/Kit de Hilos.png" alt="Kit de hilos">
+            <h4>🧵 Kit de Hilos</h4>
+            <p>Colores variados para tus proyectos.</p>
+
+            <div class="boton-carrito">
+                <button class="btn-carrito">$ 18.000</button>
+                <span>¿Quieres agregarlo al carrito?</span>
+            </div>
+        </div>
+
+        <!-- PRODUCTO 3 -->
+        <div class="producto-tienda">
+            <img src="../Imagenes/Kit para Pulseras.png" alt="Kit para hacer pulseras">
+            <h4>📿 Kit para Pulseras</h4>
+            <p>Todo lo necesario para crear tus pulseras.</p>
+
+            <div class="boton-carrito">
+                <button class="btn-carrito">$ 15.000</button>
+                <span>¿Quieres agregarlo al carrito?</span>
+            </div>
+        </div>
+
+<!-- CALENDARIO -->
+<div class="tarjeta-agenda">
+    <div class="calendario-hover">
+        ¿Quieres agendar un taller? 🧶
+    </div>
+
+    <div class="calendario-icono">📅</div>
+
+    <h4>Agenda tu visita</h4>
+
+    <p>Elige una fecha para vivir una experiencia en Arte y Sabor.</p>
+
+    <label for="fechaEvento">Selecciona una fecha:</label>
+
+    <input type="date" id="fechaEvento">
+
+    <button id="btnReservaciones" class="btn-reservaciones">
+        Reservaciones
+    </button>
+</div>
+     <!-- PRODUCTOS EXTRA -->
+        <div id="productosTiendaExtra" class="productos-tienda-extra">
+
+            <div class="producto-tienda">
+                <img src="../Imagenes/Kit de Crochet.png" alt="Kit de crochet">
+                <h4>🧶 Kit de Crochet</h4>
+                <p>Aguja y materiales para comenzar a tejer.</p>
+
+                <div class="boton-carrito">
+                    <button class="btn-carrito">$ 32.000</button>
+                    <span>¿Quieres agregarlo al carrito?</span>
+                </div>
+            </div>
+
+            <div class="producto-tienda">
+                <img src="../Imagenes/Kit de Pintura.png" alt="Kit de pintura">
+                <h4>🎨 Kit de Pintura</h4>
+                <p>Materiales para dejar volar tu creatividad.</p>
+
+                <div class="boton-carrito">
+                    <button class="btn-carrito">$ 20.000</button>
+                    <span>¿Quieres agregarlo al carrito?</span>
+                </div>
+            </div>
+
+            <div class="producto-tienda">
+                <img src="../Imagenes/Mostacillas.png" alt="Mostacillas para manualidades">
+                <h4>✨ Mostacillas</h4>
+                <p>Perfectas para pulseras y accesorios.</p>
+
+                <div class="boton-carrito">
+                    <button class="btn-carrito">$ 12.000</button>
+                    <span>¿Quieres agregarlo al carrito?</span>
+                </div>
+            </div>
+
+            <div class="producto-tienda">
+                <img src="../Imagenes/Kit para Tejido.png" alt="Kit para tejido">
+                <h4>🧶 Kit para Tejido</h4>
+                <p>Materiales para crear tus propios tejidos.</p>
+
+                <div class="boton-carrito">
+                    <button class="btn-carrito">$ 24.000</button>
+                    <span>¿Quieres agregarlo al carrito?</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<!-- BOTÓN VER MÁS -->
+    <div class="contenedor-ver-mas">
+        <button id="btnVerMasTienda" class="btn-ver-mas">Ver más</button>
+    </div>
+</section>
+<!-- CARRITO -->
+
+<div
+    class="fondo-carrito"
+    id="fondoCarrito">
+</div>
+
+<aside
+    class="carrito"
+    id="carrito">
+
+    <div class="carrito-header">
+
+        <h2>
+            🛒 Tu carrito
+        </h2>
+
+        <button id="cerrarCarrito">
+            ×
+        </button>
+
+    </div>
+
+    <div
+        class="carrito-productos"
+        id="carritoProductos">
+
+        <p class="carrito-vacio">
+            Tu carrito está vacío.
+        </p>
+
+    </div>
+
+    <div class="carrito-footer">
+
+        <div class="total-carrito">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="totalCarrito">
+                $0
+            </strong>
+
+        </div>
+
+        <button
+            class="btn-comprar"
+            id="btnComprar">
+
+            Finalizar compra
+
+        </button>
+
+    </div>
+
+</aside>
+
+<!-- FOOTER -->
+<footer>
+    <h3>Arte y Sabor</h3>
+
+    <p class="mensaje-footer">
+        Gracias por ser parte de este espacio donde el café,
+        el arte y la creatividad se encuentran. ☕🧶
+    </p>
+
+    <div class="datos-footer">
+        <p>📍 Bogotá, Colombia</p>
+        <p>🕐 Lunes a sábado · 9:00 a.m. - 7:00 p.m.</p>
+        <p>📞 +57 300 123 4567</p>
+    </div>
+
+    <p class="copyright">
+        © 2026 Arte y Sabor · Todos los derechos reservados
+    </p>
+</footer>
+<script src="../carrito/carrito.js"></script>
+<script src="../inicio/animacion.js"></script>
+<script src="../usuario/usuario.js"></script>
+</body>
+</html>

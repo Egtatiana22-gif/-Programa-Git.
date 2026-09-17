@@ -1,0 +1,831 @@
+/* ENCABEZADO */
+
+.encabezado-cancelar {
+    min-height: 400px;
+    background-image:
+        linear-gradient(
+            rgba(30, 30, 30, 0.45),
+            rgba(30, 30, 30, 0.45)
+        ),
+        url("../Imagenes/Cafeteria.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.encabezado-cancelar-contenido {
+    max-width: 800px;
+    padding: 40px;
+    color: white;
+}
+
+.encabezado-cancelar-contenido span {
+    display: block;
+    margin-bottom: 20px;
+    color: #E8E6E1;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.encabezado-cancelar-contenido h1 {
+    margin: 0;
+    color: white;
+    font-size: 52px;
+    line-height: 1.15;
+}
+
+.encabezado-cancelar-contenido p {
+    margin: 25px auto 15px;
+    color: #F3F1EC;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.encabezado-cancelar-contenido small {
+    color: #E8E6E1;
+    font-size: 14px;
+}
+
+
+/* CONTENEDOR */
+
+.gestion-contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 30px;
+}
+
+.gestion-intro {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.gestion-intro span {
+    color: #8B6F47;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.gestion-intro h2 {
+    margin: 12px 0;
+    color: #4A5A3A;
+    font-size: 34px;
+}
+
+.gestion-intro p {
+    margin: 0 auto;
+    max-width: 650px;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* OPCIONES */
+
+.opciones-reserva {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.opcion-reserva {
+    background-color: white;
+    border-radius: 20px;
+    padding: 35px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border: 1px solid #E8E6E1;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.opcion-reserva:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    border-color: #D6DCCF;
+}
+
+.opcion-icono {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: #E8E6E1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.opcion-reserva:hover .opcion-icono {
+    transform: scale(1.1) rotate(3deg);
+    background-color: #DDE5D5;
+}
+
+.opcion-reserva h3 {
+    margin: 0 0 12px;
+    color: #4A5A3A;
+    font-size: 22px;
+}
+
+.opcion-reserva p {
+    max-width: 400px;
+    margin: 0 auto 25px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.opcion-reserva button {
+    border: none;
+    border-radius: 10px;
+    padding: 13px 25px;
+    background-color: #4A5A3A;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.opcion-reserva button:hover {
+    background-color: #8B6F47;
+    transform: translateY(-2px);
+}
+
+
+/* FORMULARIOS */
+
+.formulario-gestion {
+    background-color: white;
+    border-radius: 20px;
+    padding: 35px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border: 1px solid #E8E6E1;
+    transition:
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+.formulario-gestion:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.oculto {
+    display: none;
+}
+
+.titulo-gestion {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.titulo-gestion > span {
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4A5A3A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.titulo-gestion h2 {
+    margin: 0 0 5px;
+    color: #4A5A3A;
+}
+
+.titulo-gestion p {
+    margin: 0;
+    color: #777;
+}
+
+
+/* CAMPOS */
+
+.fila-formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    margin-bottom: 8px;
+    color: #4A5A3A;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #D9D6CF;
+    border-radius: 10px;
+    padding: 13px 15px;
+    background-color: #F9F8F5;
+    color: #1E1E1E;
+    outline: none;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #4A5A3A;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(74,90,58,0.1);
+}
+
+.btn-gestion {
+    border: none;
+    border-radius: 10px;
+    padding: 14px 30px;
+    background-color: #4A5A3A;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.btn-gestion:hover {
+    background-color: #8B6F47;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+.btn-cancelar:hover {
+    background-color: #8B6F47;
+}
+
+
+/* INFORMACIÓN */
+
+.informacion-gestion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.info-gestion {
+    display: flex;
+    gap: 15px;
+    padding: 25px;
+    background-color: #F3F1EC;
+    border-radius: 16px;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.info-gestion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.info-gestion > span {
+    font-size: 25px;
+}
+
+.info-gestion h3 {
+    margin: 0 0 8px;
+    color: #4A5A3A;
+    font-size: 17px;
+}
+
+.info-gestion p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* VOLVER */
+
+.volver-reserva {
+    margin-top: 50px;
+    padding: 45px;
+    background-color: #E8E6E1;
+    border-radius: 20px;
+    text-align: center;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.volver-reserva:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.volver-reserva h2 {
+    margin: 0 0 10px;
+    color: #4A5A3A;
+}
+
+.volver-reserva p {
+    margin: 0 auto 25px;
+    max-width: 600px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.volver-reserva a {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 10px;
+    background-color: #4A5A3A;
+    color: white;
+    text-decoration: none;
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.volver-reserva a:hover {
+    background-color: #8B6F47;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   MODALES
+========================================================= */
+
+.modal-gestion {
+    position: fixed;
+    inset: 0;
+
+    background-color: rgba(30, 30, 30, 0.55);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease;
+
+    z-index: 1000;
+}
+
+
+.modal-gestion.mostrar {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+/* =========================================================
+   CONTENIDO DEL MODAL
+========================================================= */
+
+.modal-contenido {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 38px 40px;
+
+    background-color: white;
+
+    border-radius: 22px;
+
+    text-align: center;
+
+    position: relative;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.18);
+
+    transform:
+        translateY(12px)
+        scale(0.98);
+
+    opacity: 0;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+
+.modal-gestion.mostrar .modal-contenido {
+    transform:
+        translateY(0)
+        scale(1);
+
+    opacity: 1;
+}
+
+
+/* =========================================================
+   BOTÓN X
+========================================================= */
+
+.cerrar-modal {
+    position: absolute;
+
+    top: 14px;
+    right: 14px;
+
+    width: 34px;
+    height: 34px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #F1F0EC;
+
+    color: #4A5A3A;
+
+    font-size: 21px;
+    font-weight: 500;
+
+    line-height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* AL PASAR EL MOUSE */
+
+.cerrar-modal:hover {
+    background-color: #DDE5D5;
+
+    color: #4A5A3A;
+
+    transform: scale(1.08);
+}
+
+
+/* AL HACER CLICK */
+
+.cerrar-modal:active {
+    transform: scale(0.94);
+}
+
+
+/* =========================================================
+   ICONO DEL MODAL
+========================================================= */
+
+.modal-icono {
+    width: 58px;
+    height: 58px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    background-color: #E7ECDD;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+
+    line-height: 1;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TÍTULO
+========================================================= */
+
+.modal-contenido h2 {
+    margin: 0 0 12px;
+
+    color: #4A5A3A;
+
+    font-size: 25px;
+
+    line-height: 1.25;
+}
+
+
+/* =========================================================
+   TEXTO DEL MODAL
+========================================================= */
+
+.modal-contenido p {
+    margin: 0;
+
+    color: #666;
+
+    line-height: 1.6;
+
+    overflow-wrap: anywhere;
+
+    word-break: break-word;
+
+    white-space: normal;
+}
+
+
+/* =========================================================
+   MENSAJE DEMO
+========================================================= */
+
+.mensaje-demo {
+    margin: 20px 0;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background-color: #F3F1EC;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    overflow-wrap: anywhere;
+
+    word-break: break-word;
+
+    white-space: normal;
+
+    box-sizing: border-box;
+
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   RESUMEN DE CANCELACIÓN
+========================================================= */
+
+.resumen-gestion {
+    margin: 20px 0;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    background-color: #F3F1EC;
+
+    color: #555;
+
+    line-height: 1.8;
+
+    text-align: left;
+
+    max-width: 100%;
+
+    box-sizing: border-box;
+
+    overflow-wrap: anywhere;
+
+    word-break: break-word;
+
+    white-space: normal;
+
+    overflow-x: hidden;
+}
+
+
+/* DATOS DENTRO DEL RESUMEN */
+
+.resumen-gestion strong {
+    color: #4A5A3A;
+}
+
+
+.resumen-gestion span {
+    overflow-wrap: anywhere;
+
+    word-break: break-word;
+
+    white-space: pre-wrap;
+}
+
+
+/* =========================================================
+   BOTÓN DEL MODAL
+========================================================= */
+
+.btn-modal {
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 13px 28px;
+
+    background-color: #4A5A3A;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.btn-modal:hover {
+    background-color: #8B6F47;
+
+    transform: translateY(-2px);
+}
+
+
+.btn-modal:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   MODALES EN PANTALLAS PEQUEÑAS
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .modal-gestion {
+        padding: 15px;
+    }
+
+
+    .modal-contenido {
+        max-width: 100%;
+
+        padding: 35px 22px 25px;
+
+        border-radius: 20px;
+    }
+
+
+    .cerrar-modal {
+        top: 12px;
+        right: 12px;
+
+        width: 32px;
+        height: 32px;
+
+        line-height: 32px;
+
+        font-size: 20px;
+    }
+
+
+    .modal-icono {
+        width: 54px;
+        height: 54px;
+
+        margin-bottom: 16px;
+
+        font-size: 25px;
+    }
+
+
+    .modal-contenido h2 {
+        font-size: 22px;
+    }
+
+
+    .mensaje-demo,
+    .resumen-gestion {
+        padding: 14px;
+    }
+
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .encabezado-cancelar-contenido h1 {
+        font-size: 38px;
+    }
+
+    .opciones-reserva {
+        grid-template-columns: 1fr;
+    }
+
+    .informacion-gestion {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .encabezado-cancelar {
+        min-height: 350px;
+    }
+
+    .encabezado-cancelar-contenido {
+        padding: 25px;
+    }
+
+    .encabezado-cancelar-contenido h1 {
+        font-size: 30px;
+    }
+
+    .encabezado-cancelar-contenido p {
+        font-size: 16px;
+    }
+
+    .gestion-contenedor {
+        padding: 50px 20px;
+    }
+
+    .gestion-intro h2 {
+        font-size: 28px;
+    }
+
+    .formulario-gestion {
+        padding: 25px 20px;
+    }
+
+    .fila-formulario {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .titulo-gestion {
+        align-items: flex-start;
+    }
+
+    .titulo-gestion > span {
+        min-width: 42px;
+        height: 42px;
+    }
+
+    .titulo-gestion h2 {
+        font-size: 21px;
+    }
+
+    .volver-reserva {
+        padding: 35px 20px;
+    }
+
+    .modal-contenido {
+        padding: 35px 25px;
+    }
+
+}

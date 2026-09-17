@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda | Arte y Sabor</title>
+    <link rel="stylesheet" href="../inicio/estilo.css">
+    <link rel="stylesheet" href="../menu/menu.css">
+    <link rel="stylesheet" href="tienda.css">
+    <link rel="icon" type="image/png" href="../Imagenes/Icono.png">
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">
+
+        <a href="../nosotros/nosotros.html">
+
+            <img
+                src="../Imagenes/Icono.png"
+                alt="Icono de Arte y Sabor">
+
+        </a>
+
+    </div>
+
+    <nav>
+
+        <ul class="menu">
+
+            <li>
+                <a href="../inicio/inicio.html">
+                    Inicio
+                </a>
+            </li>
+
+            <li>
+                <a href="../menu/menu.html">
+                    Menú
+                </a>
+            </li>
+
+            <li>
+                <a href="../reservaciones/reservaciones.html">
+                    Reservaciones
+                </a>
+            </li>
+
+            <li>
+                <a href="tienda.html">
+                    Tienda
+                </a>
+            </li>
+
+            <li>
+                <a href="../contacto/contacto.html">
+                    Contacto
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <div class="iconos">
+
+        <a href="#" class="icono">
+
+            <img
+                src="../Imagenes/usuario.png"
+                alt="Perfil">
+
+        </a>
+
+        <a href="#" class="icono" id="btnCarrito">
+
+            <img
+                src="../Imagenes/carrito.png"
+                alt="Carrito">
+
+            <span id="contadorCarrito">
+                0
+            </span>
+
+        </a>
+
+    </div>
+
+</header>
+
+<!-- ENCABEZADO -->
+
+<section class="encabezado-tienda">
+
+    <h1>
+        Nuestra tienda
+    </h1>
+
+    <p>
+        Encuentra materiales, herramientas y detalles
+        para acompañar tus momentos de creatividad.
+    </p>
+
+</section>
+
+<!-- CATEGORÍAS -->
+
+<section class="categorias-menu">
+
+    <h2>
+        Explora nuestras categorías
+    </h2>
+
+    <div class="categorias-grid">
+
+        <div
+            class="categoria"
+            data-categoria="manualidades">
+
+            <h3>
+                🧶 Manualidades
+            </h3>
+
+            <p>
+                Materiales para crear proyectos
+                únicos y especiales.
+            </p>
+
+        </div>
+
+        <div
+            class="categoria"
+            data-categoria="pintura">
+
+            <h3>
+                🎨 Pintura
+            </h3>
+
+            <p>
+                Colores y herramientas para
+                expresar tu creatividad.
+            </p>
+
+        </div>
+
+        <div
+            class="categoria"
+            data-categoria="tejido">
+
+            <h3>
+                🧵 Tejido y Crochet
+            </h3>
+
+            <p>
+                Todo para tus proyectos
+                de tejido y crochet.
+            </p>
+
+        </div>
+
+        <div
+            class="categoria"
+            data-categoria="accesorios">
+
+            <h3>
+                💎 Accesorios
+            </h3>
+
+            <p>
+                Detalles y materiales para
+                tus creaciones.
+            </p>
+
+        </div>
+
+        <div
+            class="categoria"
+            data-categoria="libros">
+
+            <h3>
+                📚 Libros y Guías
+            </h3>
+
+            <p>
+                Aprende nuevas técnicas
+                y encuentra inspiración.
+            </p>
+
+        </div>
+
+        <div
+            class="categoria"
+            data-categoria="cafe">
+
+            <h3>
+                ☕ Café
+            </h3>
+
+            <p>
+                Accesorios para disfrutar
+                tus momentos de café.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PRODUCTOS -->
+
+<section class="carta-menu productos-tienda">
+
+    <div class="titulo-carta">
+
+        <h2>
+            Productos
+        </h2>
+
+        <p>
+            Elige lo que necesitas para crear,
+            aprender y disfrutar.
+        </p>
+
+    </div>
+
+    <!-- FILTROS -->
+
+    <div class="filtros-menu">
+
+        <button
+            class="filtro filtro-tienda activo"
+            data-filtro="todos">
+
+            Todos
+
+        </button>
+
+        <button
+            class="filtro filtro-tienda"
+            data-filtro="manualidades">
+
+            🧶 Manualidades
+
+        </button>
+
+        <button
+            class="filtro filtro-tienda"
+            data-filtro="pintura">
+
+            🎨 Pintura
+
+        </button>
+
+        <button
+            class="filtro filtro-tienda"
+            data-filtro="tejido">
+
+            🧵 Tejido y Crochet
+
+        </button>
+
+        <button
+            class="filtro filtro-tienda"
+            data-filtro="accesorios">
+
+            💎 Accesorios
+
+        </button>
+
+        <button
+            class="filtro filtro-tienda"
+            data-filtro="libros">
+
+            📚 Libros y Guías
+
+        </button>
+
+        <button
+            class="filtro filtro-tienda"
+            data-filtro="cafe">
+
+            ☕
+
+            Café
+
+        </button>
+
+    </div>
+
+    <!-- MANUALIDADES -->
+
+    <div
+        class="categoria-productos"
+        data-seccion="manualidades">
+
+        <h3>
+            🧶 Manualidades
+        </h3>
+
+        <div class="productos-menu">
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Creativo
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Kit de Bordado Floral.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Kit de Bordado Floral
+                </h4>
+
+                <p>
+                    Incluye hilos, agujas y materiales
+                    para crear diseños florales.
+                </p>
+
+                <strong>
+                    $ 28.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Kit de Bordado Floral"
+                    data-precio="28000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Nuevo
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Kit de Macramé.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Kit de Macramé
+                </h4>
+
+                <p>
+                    Materiales básicos para realizar
+                    tus primeros proyectos.
+                </p>
+
+                <strong>
+                    $ 30.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Kit de Macramé"
+                    data-precio="30000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Creativo
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Kit de Scrapbooking.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Kit de Scrapbooking
+                </h4>
+
+                <p>
+                    Papeles y detalles decorativos
+                    para tus proyectos.
+                </p>
+
+                <strong>
+                    $ 26.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Kit de Scrapbooking"
+                    data-precio="26000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Especial
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Set de Papel Decorativo.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Set de Papel Decorativo
+                </h4>
+
+                <p>
+                    Colección de papeles para
+                    manualidades y decoración.
+                </p>
+
+                <strong>
+                    $ 16.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Set de Papel Decorativo"
+                    data-precio="16000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- PINTURA -->
+
+    <div
+        class="categoria-productos"
+        data-seccion="pintura">
+
+        <h3>
+            🎨 Pintura
+        </h3>
+
+        <div class="productos-menu">
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Creativo
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Set de Pintura sobre Cerámica.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Set de Pintura sobre Cerámica
+                </h4>
+
+                <p>
+                    Materiales para decorar
+                    piezas de cerámica.
+                </p>
+
+                <strong>
+                    $ 27.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Set de Pintura sobre Cerámica"
+                    data-precio="27000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Nuevo
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Kit de Pintura en Tela.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Kit de Pintura en Tela
+                </h4>
+
+                <p>
+                    Colores y materiales para
+                    decorar diferentes telas.
+                </p>
+
+                <strong>
+                    $ 25.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Kit de Pintura en Tela"
+                    data-precio="25000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Básico
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Set de Lienzos.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Set de Lienzos
+                </h4>
+
+                <p>
+                    Lienzos preparados para
+                    tus proyectos artísticos.
+                </p>
+
+                <strong>
+                    $ 22.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Set de Lienzos"
+                    data-precio="22000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Artista
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Paleta de Pintura.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Paleta de Pintura
+                </h4>
+
+                <p>
+                    Paleta práctica para mezclar
+                    y organizar tus colores.
+                </p>
+
+                <strong>
+                    $ 14.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Paleta de Pintura"
+                    data-precio="14000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- TEJIDO -->
+
+    <div
+        class="categoria-productos"
+        data-seccion="tejido">
+
+        <h3>
+            🧵 Tejido y Crochet
+        </h3>
+
+        <div class="productos-menu">
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Popular
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Kit de Amigurumis.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Kit de Amigurumis
+                </h4>
+
+                <p>
+                    Materiales para crear pequeños
+                    personajes tejidos.
+                </p>
+
+                <strong>
+                    $ 35.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Kit de Amigurumis"
+                    data-precio="35000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Premium
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Set de Lana Premium.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Set de Lana Premium
+                </h4>
+
+                <p>
+                    Selección de lanas suaves
+                    para diferentes proyectos.
+                </p>
+
+                <strong>
+                    $ 26.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Set de Lana Premium"
+                    data-precio="26000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Básico
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Kit de Tejido Básico.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Kit de Tejido Básico
+                </h4>
+
+                <p>
+                    Todo lo necesario para comenzar
+                    tus primeros tejidos.
+                </p>
+
+                <strong>
+                    $ 29.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Kit de Tejido Básico"
+                    data-precio="29000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Accesorio
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Marcadores para Crochet.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Marcadores para Crochet
+                </h4>
+
+                <p>
+                    Marcadores para organizar
+                    tus puntos mientras tejes.
+                </p>
+
+                <strong>
+                    $ 13.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Marcadores para Crochet"
+                    data-precio="13000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ACCESORIOS -->
+
+    <div
+        class="categoria-productos"
+        data-seccion="accesorios">
+
+        <h3>
+            💎 Accesorios
+        </h3>
+
+        <div class="productos-menu">
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Nuevo
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Kit de Dijes.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Kit de Dijes
+                </h4>
+
+                <p>
+                    Dijes decorativos para
+                    personalizar tus accesorios.
+                </p>
+
+                <strong>
+                    $ 18.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Kit de Dijes"
+                    data-precio="18000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Creativo
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Set de Cuentas Decorativas.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Set de Cuentas Decorativas
+                </h4>
+
+                <p>
+                    Cuentas de diferentes formas
+                    para tus creaciones.
+                </p>
+
+                <strong>
+                    $ 17.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Set de Cuentas Decorativas"
+                    data-precio="17000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Especial
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Kit de Accesorios para Pulseras.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Kit de Accesorios para Pulseras
+                </h4>
+
+                <p>
+                    Materiales para crear
+                    pulseras personalizadas.
+                </p>
+
+                <strong>
+                    $ 21.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Kit de Accesorios para Pulseras"
+                    data-precio="21000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Artesanal
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Set de Broches Artesanales.png" alt="Producto">
+                </div>
+                <h4>
+                    Set de Broches Artesanales
+                </h4>
+
+                <p>
+                    Broches para complementar
+                    tus proyectos.
+                </p>
+
+                <strong>
+                    $ 14.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Set de Broches Artesanales"
+                    data-precio="14000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- LIBROS -->
+
+    <div
+        class="categoria-productos"
+        data-seccion="libros">
+
+        <h3>
+            📚 Libros y Guías
+        </h3>
+
+        <div class="productos-menu">
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Guía
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Libro de Manualidades.png" alt="Producto">
+                </div>
+                <h4>
+                    Guía de Manualidades Creativas
+                </h4>
+
+                <p>
+                    Ideas y proyectos para desarrollar
+                    nuevas habilidades.
+                </p>
+
+                <strong>
+                    $ 32.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Guía de Manualidades Creativas"
+                    data-precio="32000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Guía
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Guía de Amigurumis.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Guía de Amigurumis
+                </h4>
+
+                <p>
+                    Aprende paso a paso diferentes
+                    proyectos de amigurumi.
+                </p>
+
+                <strong>
+                    $ 34.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Guía de Amigurumis"
+                    data-precio="34000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Creativo
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Cuaderno de Ideas Creativas.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Cuaderno de Ideas Creativas
+                </h4>
+
+                <p>
+                    Un espacio para escribir,
+                    dibujar y planear proyectos.
+                </p>
+
+                <strong>
+                    $ 20.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Cuaderno de Ideas Creativas"
+                    data-precio="20000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Arte
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Guía de Pintura Decorativa.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Guía de Pintura Decorativa
+                </h4>
+
+                <p>
+                    Técnicas e ideas para decorar
+                    diferentes superficies.
+                </p>
+
+                <strong>
+                    $ 31.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Guía de Pintura Decorativa"
+                    data-precio="31000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CAFÉ -->
+
+    <div
+        class="categoria-productos"
+        data-seccion="cafe">
+
+        <h3>
+            ☕ Café
+        </h3>
+
+        <div class="productos-menu">
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Especial
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Taza Artesanal.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Taza Artesanal
+                </h4>
+
+                <p>
+                    Taza especial para disfrutar
+                    tus momentos de café.
+                </p>
+
+                <strong>
+                    $ 25.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Taza Artesanal"
+                    data-precio="25000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Reutilizable
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Vaso Reutilizable.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Vaso Reutilizable
+                </h4>
+
+                <p>
+                    Lleva tu bebida favorita
+                    contigo a donde quieras.
+                </p>
+
+                <strong>
+                    $ 24.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Vaso Reutilizable"
+                    data-precio="24000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Café
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Prensa Francesa.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Prensa Francesa
+                </h4>
+
+                <p>
+                    Prepara café de manera
+                    sencilla y especial.
+                </p>
+
+                <strong>
+                    $ 45.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Prensa Francesa"
+                    data-precio="45000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+            <div class="producto-menu">
+
+                <span class="etiqueta-producto">
+                    Regalo
+                </span>
+
+                <div class="producto-imagen">
+                  <img src="../Imagenes/Set de Café para Regalo.png" alt="Producto">
+                </div>
+
+                <h4>
+                    Set de Café para Regalo
+                </h4>
+
+                <p>
+                    Un detalle especial para
+                    los amantes del café.
+                </p>
+
+                <strong>
+                    $ 50.000
+                </strong>
+
+                <button
+                    class="btn-detalle"
+                    data-nombre="Set de Café para Regalo"
+                    data-precio="50000">
+
+                    Agregar al carrito
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- EXPERIENCIAS-->
+<section class="experiencias-menu">
+    <h2>
+        🧶 Más que una cafetería
+    </h2>
+    <p>
+        Disfruta un buen café mientras descubres tu lado creativo.
+    </p>
+    <div class="experiencias-grid">
+        <div class="experiencia">
+            <h3>
+                🧶 Taller de Crochet
+            </h3>
+            <p>
+                Aprende, crea y comparte en un ambiente acogedor.
+            </p>
+        </div>
+        <div class="experiencia">
+            <h3>
+                🎨 Taller de Pintura
+            </h3>
+            <p>
+                Una experiencia para dejar volar tu creatividad.
+            </p>
+        </div>
+        <div class="experiencia">
+            <h3>
+                ✨ Creación de Pulseras
+            </h3>
+            <p>
+                Diseña tus propios accesorios y llévalos contigo.
+            </p>
+        </div>
+        <div class="experiencia">
+            <h3>
+                ☕ Experiencias con Café
+            </h3>
+            <p>
+                Descubre nuevas formas de disfrutar y conocer el café.
+            </p>
+        </div>
+    </div>
+    <a class="btn-experiencias" href="../reservaciones/reservaciones.html">
+    Ver experiencias
+    </a>
+</section>
+
+<!-- SECCIÓN FINAL -->
+
+<section class="espacio-futuro">
+
+    <h2>
+        Crea algo especial
+    </h2>
+
+    <p>
+        Cada producto puede convertirse en una
+        nueva idea, un nuevo proyecto o un momento
+        para compartir.
+    </p>
+
+</section>
+
+<!-- CARRITO -->
+
+<div
+    class="fondo-carrito"
+    id="fondoCarrito">
+</div>
+
+<aside
+    class="carrito"
+    id="carrito">
+
+    <div class="carrito-header">
+
+        <h2>
+            🛒 Tu carrito
+        </h2>
+
+        <button id="cerrarCarrito">
+            ×
+        </button>
+
+    </div>
+
+    <div
+        class="carrito-productos"
+        id="carritoProductos">
+
+        <p class="carrito-vacio">
+            Tu carrito está vacío.
+        </p>
+
+    </div>
+
+    <div class="carrito-footer">
+
+        <div class="total-carrito">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="totalCarrito">
+                $0
+            </strong>
+
+        </div>
+
+        <button
+            class="btn-comprar"
+            id="btnComprar">
+
+            Finalizar compra
+
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>
+        Arte y Sabor
+    </h3>
+
+    <p class="mensaje-footer">
+
+        Gracias por ser parte de este espacio donde
+        el café, el arte y la creatividad se encuentran.
+        ☕🧶
+
+    </p>
+
+    <div class="datos-footer">
+
+        <p>
+            📍 Bogotá, Colombia
+        </p>
+
+        <p>
+            🕐 Lunes a sábado · 9:00 a.m. - 7:00 p.m.
+        </p>
+
+        <p>
+            📞 +57 300 123 4567
+        </p>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 Arte y Sabor · Todos los derechos reservados
+    </p>
+
+</footer>
+
+<script src="tienda.js"></script>
+<script src="../carrito/carrito.js"></script>
+<script src="../usuario/usuario.js"></script>
+</body>
+</html>
